@@ -36,6 +36,16 @@ jobs:
           
       - name: Update NodeJs
         uses: NuGet/setup-nuget@v1.0.5
+        
+        # Install nvm
+npm install -g nvm
+
+# Install the latest version of Node.js
+nvm install latest
+
+# Use the latest version of Node.js
+nvm use latest
+
 
 
   deploy:
